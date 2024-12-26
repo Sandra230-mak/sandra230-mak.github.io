@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+
+body {
+    font-family: Michroma, serif;
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+}
+
+p {
+   color: aquamarine; 
+}
+
+.nav-link {
+    color: aquamarine;
+}
+.navbar-nav .nav-link.active {
+    color: rgb(167, 173, 170);  
+}
+
+.navbar-brand img {
+    width: 40px;
+
+}
+
+.navbar-toggler {
+    background-color: rgb(167, 173, 170);
+}
+
+.sidebar {
+    color: aquamarine;
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+}
+
+.card {
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+    color: aquamarine;
+}
+
+.card a {
+text-decoration: none;
+color: aquamarine;
+}
+
+.slide-text {
+    color: aquamarine;
+   margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+
+.footer-text {
+    color: aquamarine;
+    margin: auto auto; 
+}
+footer, 
+.btn-outline-primary {
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+
+}
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;   
+}
+
+@keyframes call {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+     display: none;   
+    }
+}
